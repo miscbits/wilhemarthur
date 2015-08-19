@@ -9,12 +9,12 @@
 <body>
 
 <header>
-    <nav>
-        <a href="#section1">section 1</a>
-        <a href="#section2">section 2</a>
-        <a href="#section3">section 3</a>
-        <a href="#section4">section 4</a>
-    </nav>
+    <ul id="header-nav">
+        <li><a data-menuanchor="firstPage" href="/#firstPage" class="active">section 1</a></li>
+        <li><a data-menuanchor="secondPage" href="/#secondPage">section 2</a></li>
+        <li><a data-menuanchor="thirdPage" href="/#thirdPage">section 3</a></li>
+        <li><a data-menuanchor="fourthPage" href="/#fourthPage">section 4</a></li>
+    </ul>
 </header>
 <%= yield %>
 

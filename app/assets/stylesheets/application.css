@@ -14,3 +14,19 @@
  *= require_self
  *= require font-awesome
  */
+header {
+    position: fixed;
+    height: 50px;
+    display: block;
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+ul#header-nav li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 8px;
+}
