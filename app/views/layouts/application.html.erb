@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="fp-enabled">
 <head>
   <title>WilhemArthur</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -10,10 +10,10 @@
 
 <header>
     <ul id="header-nav">
-        <li><a data-menuanchor="firstPage" href="/#firstPage" class="active">section 1</a></li>
-        <li><a data-menuanchor="secondPage" href="/#secondPage">section 2</a></li>
-        <li><a data-menuanchor="thirdPage" href="/#thirdPage">section 3</a></li>
-        <li><a data-menuanchor="fourthPage" href="/#fourthPage">section 4</a></li>
+        <li data-menuanchor="firstPage" ><a href="#firstPage">section 1</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">section 2</a></li>
+        <li data-menuanchor="thirdPage" ><a href="#thirdPage">section 3</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">section 4</a></li>
     </ul>
 </header>
 <%= yield %>
