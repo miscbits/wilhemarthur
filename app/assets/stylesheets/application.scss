@@ -14,6 +14,23 @@
  *= require_self
  *= require font-awesome
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+div#profile-Image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    img {
+        border-radius: 100%;
+    }
+}
+
+.name {
+    text-align: center;
+}
+
 header {
     position: fixed;
     height: 50px;
@@ -29,4 +46,32 @@ ul#header-nav li {
     display: inline;
     text-align: center;
     padding: 8px;
+}
+
+.links {
+    text-align: center;
+    font-size: 2em;
+    > a {
+        background-color: #434843;
+        color: #fdfdfd;
+        width: 40px;
+        display: inline-block;
+        margin: 0 auto;
+        border-radius: 100%;
+        transition: all .2s linear;
+
+        &:hover {
+            background-color: #fafafa;
+            color: #050505;
+        }
+    }
+}
+
+.next-section {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4em;
+    i:hover {
+        cursor: pointer;
+    }
 }
